@@ -3,9 +3,18 @@ navRemoveBTN = document.querySelector("#button-nav-remove");
 navbar = document.querySelector(".nav-menu");
 navLinks = document.querySelectorAll(".nav-link");
 scrollupBTN = document.querySelector("#button-scrollUp");
-servicesBTNS = document.querySelector(".thumb")
+servicesBTNS = document.querySelector(".thumb");
+let contactButtonsSocial = document.getElementsByClassName(
+  "contact-buttons-social"
+);
+document
+  .getElementById("contact-button-show")
+  .addEventListener("click", showContactButtons);
+document
+  .getElementById("contact-button-close")
+  .addEventListener("click", closeContactButtons);
 
-const windowEvents = ["load","reload"];
+const windowEvents = ["load", "reload"];
 windowEvents.forEach((event) => {
   window.addEventListener(event, () => {
     window.scrollTo({
@@ -14,6 +23,32 @@ windowEvents.forEach((event) => {
     });
   });
 });
+
+function showContactButtons() {
+  setTimeout(() => {
+    contactButtonsSocial[3].style.transform = "translateY(0px)";
+    contactButtonsSocial[2].style.transform = "translateY(0px)";
+    contactButtonsSocial[1].style.transform = "translateY(0px)";
+    contactButtonsSocial[0].style.transform = "translateY(0px)";
+  }, 200);
+  setTimeout(() => {
+    document.getElementById("contact-button-show").style.display = "none";
+    document.getElementById("contact-button-close").style.display = "flex";
+  }, 300);
+}
+
+function closeContactButtons() {
+  setTimeout(() => {
+    contactButtonsSocial[3].style.transform = "translateY(75px)";
+    contactButtonsSocial[2].style.transform = "translateY(150px)";
+    contactButtonsSocial[1].style.transform = "translateY(225px)";
+    contactButtonsSocial[0].style.transform = "translateY(300px)";
+  }, 200);
+  setTimeout(() => {
+    document.getElementById("contact-button-show").style.display = "flex";
+    document.getElementById("contact-button-close").style.display = "none";
+  }, 300);
+}
 
 navAddBTN.onclick = () => {
   navbar.classList.add("nav-menu-show");
@@ -56,7 +91,7 @@ window.addEventListener("scroll", () => {
       let position = section.offsetTop - 100;
       if (a.innerText === "الرئيسية") position = -100;
       window.scrollTo({ left: 0, top: position });
-      if(window.innerWidth <= 992) {
+      if (window.innerWidth <= 992) {
         navbar.classList.remove("nav-menu-show");
         navAddBTN.classList.remove("hide");
         navAddBTN.classList.add("show");
@@ -78,7 +113,7 @@ let homeSwiper = new Swiper(".homeSwiper", {
 let projectSwiper = new Swiper(".projectSwiper", {
   speed: 1000,
   spaceBetween: 20,
-  loop: true,
+  loop: false,
   slidesPerView: 3,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -97,15 +132,3 @@ let projectSwiper = new Swiper(".projectSwiper", {
     },
   },
 });
-
-// const sr = ScrollReveal({
-//   origin: "top",
-//   distance: "60px",
-//   duration: 1000,
-//   delay: 400,
-//   reset: true,
-// });
-// sr.reveal(".homeSwiper , .newSwiper ,.newsletter ,.discount");
-// sr.reveal(".trick-data , .category-data", { interval: 100 });
-// sr.reveal(".about-data ,.discount-data", { origin: "left" });
-// reveal content on scrolling
