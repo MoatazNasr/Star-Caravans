@@ -1139,6 +1139,9 @@ input::placeholder {
   list-style: none;
 }
 
+.footer-container .footer-details .nav-link a {
+color: white;
+}
 .footer-container .footer-details .nav-link {
   -webkit-transition: 0.5s;
   transition: 0.5s;
