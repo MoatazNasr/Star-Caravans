@@ -1202,9 +1202,15 @@ input::placeholder {
   position: fixed;
   right: 1.75rem;
   bottom: 1.25rem;
-  z-index: 5;
+  z-index: 20;
 }
+@media screen and (max-width: 992px) {
 
+  #sidebar-button {
+    right: 0.5rem;
+    bottom: 0rem;
+  } 
+}
 #sidebar-button #conctact-buttons {
   display: grid;
   grid-template-columns: 1fr;
