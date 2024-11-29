@@ -1110,12 +1110,14 @@ FOOTER
 
 .footer-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   place-content: center;
 }
-
+.footer-container .footer-details {
+  text-align: center;
+}
 .footer-container .footer-details h3 {
   color: #2b2d42;
   font-weight: 700 !important;
@@ -1135,6 +1137,7 @@ input::placeholder {
   margin-top: 0.75rem;
   display: flex;
   flex-direction: column;
+
   gap: 1.25rem;
 }
 
