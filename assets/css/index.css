@@ -1292,6 +1292,8 @@ input::placeholder {
   border-radius: 50%;
   width: 55px !important;
   margin: 10px 0;
+  justify-content: center;
+  align-items: center;
   height: 55px !important;
   aspect-ratio: 1;
   box-sizing: border-box;
