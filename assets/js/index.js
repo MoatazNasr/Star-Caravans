@@ -33,7 +33,7 @@ function showContactButtons() {
   }, 200);
   setTimeout(() => {
     document.getElementById("contact-button-show").style.display = "none";
-    document.getElementById("contact-button-close").style.display = "inline-block";
+    document.getElementById("contact-button-close").style.display = "flex";
   }, 300);
 }
 
@@ -45,7 +45,7 @@ function closeContactButtons() {
     contactButtonsSocial[0].style.transform = "translateY(300px)";
   }, 200);
   setTimeout(() => {
-    document.getElementById("contact-button-show").style.display = "inline-block";
+    document.getElementById("contact-button-show").style.display = "flex";
     document.getElementById("contact-button-close").style.display = "none";
   }, 300);
 }
