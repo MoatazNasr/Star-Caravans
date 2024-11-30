@@ -9,6 +9,9 @@ reset
 --------------------------------------------- 
 */
 
+*{
+box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -1200,16 +1203,9 @@ input::placeholder {
   width: 50px;
   height: max-content;
   position: fixed;
-  right: 1.75rem;
-  bottom: 1.25rem;
+  right: 4vw;
+  bottom: 0;
   z-index: 20;
-}
-@media screen and (max-width: 992px) {
-
-  #sidebar-button {
-    right: 0.5rem;
-    bottom: 0rem;
-  } 
 }
 #sidebar-button #conctact-buttons {
   display: grid;
@@ -1235,11 +1231,17 @@ input::placeholder {
 #contact-buttons a:nth-child(1) {
   background-color: #1877f2;
   transform: translateY(300px);
+  -webkit-transform: translateY(300px); /* Older Webkit-based browsers like Safari */
+  -moz-transform: translateY(300px);    /* Older Firefox versions */
+  -ms-transform: translateY(300px);     /* Older Internet Explorer versions */
 }
 
 #contact-buttons a:nth-child(2) {
   background-color: #25d366;
   transform: translateY(225px);
+  -webkit-transform: translateY(225px); /* Older Webkit-based browsers like Safari */
+  -moz-transform: translateY(225px);    /* Older Firefox versions */
+  -ms-transform: translateY(225px);     /* Older Internet Explorer versions */
 }
 
 #contact-buttons a:nth-child(3) {
@@ -1270,10 +1272,16 @@ input::placeholder {
       #fec66d 100%
     );
   transform: translateY(150px);
+  -webkit-transform: translateY(150px); /* Older Webkit-based browsers like Safari */
+  -moz-transform: translateY(150px);    /* Older Firefox versions */
+  -ms-transform: translateY(150px);     /* Older Internet Explorer versions */
 }
 
 #contact-buttons a:nth-child(4) {
   transform: translateY(75px);
+  -webkit-transform: translateY(75px); /* Older Webkit-based browsers like Safari */
+  -moz-transform: translateY(75px);    /* Older Firefox versions */
+  -ms-transform: translateY(75px);     /* Older Internet Explorer versions */
 }
 
 #sidebar-button button {
@@ -1292,6 +1300,9 @@ input::placeholder {
 }
 #sidebar-button button:focus {
   transform: rotate(360deg);
+  -webkit-transform: rotate(360deg); /* Older Webkit-based browsers like Safari */
+  -moz-transform: rotate(360deg);    /* Older Firefox versions */
+  -ms-transform: rotate(360deg);     /* Older Internet Explorer versions */
 }
 
 #sidebar-button button i {
