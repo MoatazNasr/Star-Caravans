@@ -1200,7 +1200,7 @@ input::placeholder {
 #sidebar-button {
   display: grid;
   grid-template-columns: 1fr;
-  width: 50px;
+  width: 55px;
   height: 371px;
   position: fixed;
   right: 30px;
@@ -1290,11 +1290,10 @@ input::placeholder {
   background-color: #2b2d42;
   border: 1px solid #2b2d42;
   border-radius: 50%;
-  width: 55px !important;
+  width: 100%;
   margin: 10px 0;
   justify-content: center;
   align-items: center;
-  height: 55px !important;
   aspect-ratio: 1;
   box-sizing: border-box;
   font-size: 40px;
