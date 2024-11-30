@@ -1203,8 +1203,8 @@ input::placeholder {
   width: 50px;
   height: 371px;
   position: fixed;
-  right: 4vw;
-  bottom: 0vw;
+  right: 30px;
+  bottom: 0px;
   z-index: 20;
 }
 #sidebar-button #conctact-buttons {
@@ -1220,6 +1220,7 @@ input::placeholder {
   width: 55px;
   margin: 10px 0;
   height: 55px;
+  aspect-ratio: 1;
   font-size: 40px;
   transition: 0.4s;
 }
@@ -1294,6 +1295,8 @@ input::placeholder {
   width: 55px;
   margin: 10px 0;
   height: 55px;
+  aspect-ratio: 1;
+  box-sizing: border-box;
   font-size: 40px;
   z-index: 1;
   transition: 0.28s all;
