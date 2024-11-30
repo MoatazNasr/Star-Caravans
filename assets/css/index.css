@@ -1289,8 +1289,6 @@ input::placeholder {
   display: none;
   background-color: #2b2d42;
   border: 1px solid #2b2d42;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   width: 55px;
   margin: 10px 0;
@@ -1313,7 +1311,7 @@ input::placeholder {
 }
 
 #sidebar-button #contact-button-show {
-  display: flex;
+  display: inline-block;
 }
 #sidebar-button #contact-button-close {
   display: none;
