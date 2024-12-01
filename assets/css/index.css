@@ -1290,10 +1290,11 @@ input::placeholder {
   background-color: #2b2d42;
   border: 1px solid #2b2d42;
   border-radius: 50%;
-  width: 100%;
+  max-width: 55px;
   margin: 10px 0;
   justify-content: center;
   align-items: center;
+  max-height: 55px;
   aspect-ratio: 1;
   box-sizing: border-box;
   font-size: 40px;
