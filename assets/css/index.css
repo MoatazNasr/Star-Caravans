@@ -1288,15 +1288,15 @@ input::placeholder {
 #sidebar-button button {
   display: none;
   background-color: #2b2d42;
-  border: 1px solid #2b2d42;
+  border: 0px solid #2b2d42;
   border-radius: 50%;
   max-width: 55px;
   margin: 10px 0;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   max-height: 55px;
   aspect-ratio: 1;
   box-sizing: border-box;
+  padding: 0;
   font-size: 40px;
   z-index: 1;
   transition: 0.28s all;
@@ -1313,7 +1313,7 @@ input::placeholder {
 }
 
 #sidebar-button #contact-button-show {
-  display: flex;
+  display: block;
 }
 #sidebar-button #contact-button-close {
   display: none;
