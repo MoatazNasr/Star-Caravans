@@ -278,7 +278,7 @@ header
   z-index: 10;
   margin: 0;
   font-size: 18px;
-  background-color: white;
+  background-color: #2b2d42;
   display: grid;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
@@ -339,13 +339,13 @@ header
 .nav-item {
   margin: 0.5rem 0 0.5rem 0;
   list-style: none;
-  color: #1e1e1e;
+  color: white;
   position: relative;
 }
 
 .nav-link:hover,
 .nav-item:hover {
-  color: #2b2d42;
+  color: #03a4ed;
 }
 
 .nav-item {
@@ -361,9 +361,12 @@ header
   background-color: transparent;
   border-radius: 3px;
   padding: 1rem 2rem;
-  border: 2px solid white;
+  border: 2px solid #2b2d42;
   font-weight: 600;
-  color: #37afe1;
+  color: white;
+}
+.button-nav:hover{
+background-color: white;
 }
 
 .button-nav-add,
